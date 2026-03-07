@@ -1,4 +1,10 @@
-i = 0
-while i < 5:
-    print(i)
-   
+
+#name = input("какой вас зовут ?")
+
+#while name != "стоп":
+   # print(f"Привет {name}")
+   # name = input("какой вас зовут ?")
+
+#print("Так точно")
+
+
