@@ -1,5 +1,10 @@
 print ("Привет я Ая")
 
+commands = ["Привет", "Помощь",  "время", "выход"]
+
+for command in commands:
+    print(f"Доступная команда: {command}")
+
 time = int(input("Сколько у вас сейчас времени ?"))
 
 if 6 <= time <= 11:
