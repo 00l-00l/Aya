@@ -11,9 +11,18 @@ elif 12 <= time <= 17:
 elif 18 <= time  <= 22:
     print("добрый вечер")
 
-else:
+else: 
     print("Ты не спишь?")
 
 name=input("Как я к вам могу обращаться ?")
 
 print (f"Запомнила {name}. Чем могу помочь?")
+
+command = input("Введите команду:")
+
+
+while command != "выход":
+     print("Я тебя слышу")
+     command = input("Введите команду:")
+
+print("До свидания")
