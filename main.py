@@ -32,10 +32,20 @@ while True:
                     
       elif list == "список":
            with open("tasks.txt", "r", encoding="utf-8") as file1:
-               for line in file1:
-                print(line.strip())
+               for index, line in enumerate(file1, 1):
+                print(index, line.strip())
+      elif list == "удалить":
+           with open("tasks.txt", "r", encoding="utf-8") as file1:
+               tasks = file1.readlines()
+               for index, line in enumerate(tasks, 1):
+                print(index, line.strip())
+               number = int(input("Какую задачу удалить? "))
+               del tasks[number - 1]
+               with open("tasks.txt", "w", encoding="utf-8") as file2:
+                 file2.writelines(tasks)
+
+ 
       elif list == "выход":
-         print("до свидания")
-         break
-        
+             print("до свидания")
+             break
        
