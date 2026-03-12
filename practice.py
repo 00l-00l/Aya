@@ -1,6 +1,8 @@
-a = 1
+def privet(name):
+    print(f"Привет, {name}!")
 
-while a < 10:
-    print('Цикл выполнился',  'раз(а)')
-    a = a+1
-print('Цикл окончен')
+privet("Алексей")
+
+privet("Иван")
+
+privet("Дмитрий")
